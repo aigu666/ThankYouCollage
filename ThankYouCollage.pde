@@ -1,4 +1,4 @@
-/* @pjs preload="flag.png";*/
+/* @pjs preload="heart.png";*/
 //integer variables
 int X=80;
 int Y=80;
