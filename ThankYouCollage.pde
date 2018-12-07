@@ -2,6 +2,7 @@
 int X=80;
 int Y=80;
 int bounce=5;
+PImage img;
 
 
 
@@ -15,6 +16,9 @@ void setup(){
 //any thing here repeats while code is running
 void draw(){
   background(#22E323);
+  
+  img = loadImage("heart.png");
+  image(img, 410,250, width /4, height /4);
   
 //smiley face
     fill(#DE3816);
@@ -45,6 +49,9 @@ if (Y>height-300||Y<50)
     textAlign(160,240);
     textSize(35);
     text("Thank You",160,340);
+    textAlign(150,450);
+    textSize(30);
+    text("be happy every day",150,450);
     
 //smiley face
     fill(253,random(100),random(200));
@@ -58,6 +65,11 @@ if (Y>height-300||Y<50)
     rect(160,240,180,180);
     quad(300,120,320,120,320,218,300,187);
     triangle(260,140,340,240,160,240);
+   // circle
+   fill(#F59623);
+    ellipse(100,560,50,50);
+    ellipse(560,560,50,50);
+    
     
   }
    }
